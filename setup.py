@@ -15,7 +15,9 @@ setuptools.setup(
     url='https://github.com/ods94065/card-kit',
     packages=setuptools.find_packages(),
     package_data={'cardkit': ['img/*.png']},
-    data_files=['LICENSE', 'README.md'],
+    data_files=[
+        ('share/doc/cardkit', ['LICENSE', 'README.md']),
+    ],
     test_suite='tests',
     classifiers=[
         'Development Status :: 3 - Alpha',
